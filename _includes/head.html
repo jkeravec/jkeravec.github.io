@@ -4,6 +4,10 @@
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="Content-Language" content="fr">
+
+    <meta name="DC.Copyright" content="© 2016 Julien Kéravec">
+    <meta name="DC.Author" content="Julien Kéravec">
 
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
 
@@ -18,17 +22,6 @@
     <meta property="og:url" content="{{ site.url }}{{ page.url }}">
     <meta property="og:site_name" content="{{ site.title }}">
     {% if page.imagefeature %}<meta property="og:image" content="{{ site.url }}/images/{{ page.imagefeature }}">{% else %}<meta property="og:image" content="{{ site.url }}/img/logo-og.jpg">{% endif %}
-
-    {% if site.owner.twitter %}
-    <!-- Twitter Cards -->
-    {% if page.imagefeature %}<meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="{{ site.url }}/images/{{ page.imagefeature }}">
-    {% else %}<meta name="twitter:card" content="summary">
-    <meta name="twitter:image" content="{% if page.image.thumb %}{{ site.url }}/images/{{ page.image.thumb }}{% else %}{{ site.url }}/images/{{ site.logo }}{% endif %}">{% endif %}
-    <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-    <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
-    <meta name="twitter:creator" content="@{{ site.owner.twitter }}">
-    {% endif %}
 
     <!-- Icons -->
     <link rel="apple-touch-icon" sizes="57x57" href="{{ site.url }}/icons/apple-touch-icon-57x57.png">
@@ -57,8 +50,8 @@
     <link rel="dns-prefetch" href="//fonts.googleapis.com">
 
     <!-- Custom Fonts -->
-    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='//fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 
     <!-- Styles -->
     {% if page.url == '/' and site.env == 'prod' %}
@@ -70,7 +63,7 @@
     <script>{% include first.min.js %}</script>
     <script>
       {% if site.env == 'prod' %}
-      loadCSS('/{{ "css/main.min.css" | prepend: site.baseurl }}');
+      loadCSS("/css/main.min.css?v={{ site.time | date: '%y%m%d%k%M%S' }}");
       {% else %}
       loadCSS('/{{ "css/vendor-dev.css" | prepend: site.baseurl }}');
       loadCSS('/{{ "css/main-dev.css" | prepend: site.baseurl }}');
@@ -78,7 +71,7 @@
     </script>
     <noscript>
       {% if site.env == 'prod' %}
-      <link rel="stylesheet" href="/{{ "css/main.min.css" | prepend: site.baseurl }}">
+      <link rel="stylesheet" href="/css/main.min.css?v={{ site.time | date: '%y%m%d%k%M%S' }}">
       {% else %}
       <link rel="stylesheet" href="/{{ "css/vendor-dev.css" | prepend: site.baseurl }}">
       <link rel="stylesheet" href="/{{ "css/main-dev.css" | prepend: site.baseurl }}">
