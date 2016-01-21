@@ -1,0 +1,17 @@
+
+  <ul class="list-inline social-buttons">
+    <!-- Pinterest (url) -->
+    <li><a href="http://pinterest.com/pin/create/button/?url={{ site.url }}{{ site.baseurl }}{{ page.url }}&media={{ site.url }}{{ site.baseurl }}/logo_og.jpg&description={{ page.content | truncatewords: 40 | strip_html }}" count-layout="horizontal"><i class="fa fa-{{ pinterest }}"></i> Pin It</a></li>
+    <!-- Twitter (url, text, @mention) -->
+    <li><a href="http://twitter.com/share?url={{ site.url }}{{ site.baseurl }}{{ page.url }}&text=&raquo;{{ page.title }}"><i class="fa fa-twitter"></i> Twitter</a></li>
+    <!-- Google Plus (url) -->
+    <li><a href="https://plus.google.com/share?url={{ site.url }}{{ site.baseurl }}/{{ page.url }}"><i class="fa fa-google"></i> Google Plus</a></li>
+    <!-- Facebook (url) -->
+    <li><a href="http://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ site.baseurl }}{{ page.url }}"><i class="fa fa-facebook"></i> Facebook</a></li>
+    <!-- StumbleUpon (url, title) -->
+    <li><a href="http://www.stumbleupon.com/submit?url={{ site.url }}{{ site.baseurl }}{{ page.url }}&title={{ page.title }}"><i class="fa fa-stumbleupon"></i> StumbleUpon</a></li>
+    <!-- Reddit (url, title) -->
+    <li><a href="http://reddit.com/submit?url={{ site.url }}{{ site.baseurl }}{{ page.url }}&title={{ page.title }}"><i class="fa fa-reddit"></i> Reddit</a></li>
+    <!-- LinkedIn (url, title, summary, source url) -->
+    <li><a href="http://www.linkedin.com/shareArticle?url={{ site.url }}{{ site.baseurl }}/{{ page.url }}&title={{ page.title }}&summary={{ page.content | truncatewords: 40 | strip_html }}&source={{ site.url }}{{ site.baseurl }}/{{ page.url }}"><i class="fa fa-linkedin"></i> LinkedIn</a></li>
+  </ul>

@@ -1,0 +1,18 @@
+
+<picture>
+    <source type="image/webp"
+        srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 320w"
+        data-srcset="{{ site.baseurl }}/{{ include.path }}/{{ include.src | replace: '.jpg', '-290.webp' | replace: '.png', '-290.webp' }} 320w,
+        {{ site.baseurl }}/{{ include.path }}/{{ include.src | replace: '.jpg', '-500.webp' | replace: '.png', '-500.webp' }} 330w,
+        {{ site.baseurl }}/{{ include.path }}/{{ include.src | replace: '.jpg', '-500.webp' | replace: '.png', '-600.webp' }} 680w"
+        sizes="100vw">
+    <img
+        class="{{ include.classes }} lazyload"
+        src="{{ site.baseurl }}/{{ include.path }}/{{ include.src }}"
+        srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 320w"
+        data-srcset="{{ site.baseurl }}/{{ include.path }}/{{ include.src | replace: '.jpg', '-290.jpg' | replace: '.png', '-290.png' }} 320w,
+        {{ site.baseurl }}/{{ include.path }}/{{ include.src | replace: '.jpg', '-500.jpg' | replace: '.png', '-500.png' }} 500w,
+        {{ site.baseurl }}/{{ include.path }}/{{ include.src | replace: '.jpg', '-500.jpg' | replace: '.png', '-600.png' }} 600w"
+        alt="{{ include.alt }}"
+        sizes="100vw">
+</picture>
