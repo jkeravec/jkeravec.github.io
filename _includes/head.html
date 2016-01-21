@@ -4,7 +4,7 @@
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <meta name="Content-Language" content="fr">
+    <meta name="language" content="fr">
 
     <meta name="DC.Copyright" content="© 2016 Julien Kéravec">
     <meta name="DC.Author" content="Julien Kéravec">
@@ -50,9 +50,9 @@
     <link rel="dns-prefetch" href="//fonts.googleapis.com">
 
     <!-- Custom Fonts -->
-    <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href='//fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-
+    <!-- <link href="//fonts.googleapis.com/css?family=Montserrat:400,700|Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css"> -->
+    {% include fonts.js %}
+    
     <!-- Styles -->
     {% if page.url == '/' and site.env == 'prod' %}
     <style>

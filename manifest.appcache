@@ -1,0 +1,17 @@
+---
+layout: null
+---
+CACHE MANIFEST
+# rev {{ site.buildtime }}
+
+CACHE:
+/css/main.min.css
+/fonts/fontawesome-webfont.woff?v=4.5.0
+/js/main.min.js
+
+{% for item in site.images %}{{ item.url }}
+
+NETWORK:
+*
+http://*
+https://*

@@ -1,7 +1,0 @@
----
-layout: null
-permalink: .htaccess
----
-RewriteEngine On
-RewriteCond %{http_host} ^www.newbieonruby.com [nc]
-RewriteRule ^(.*)$ http://newbieonruby.com/$1 [r=301,nc]

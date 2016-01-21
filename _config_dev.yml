@@ -9,7 +9,7 @@ description: "Webmaster, intégrateur HTML, développeur front end, réalisation
 
 # excerpt_separator: <!--more-->
 
-google_analytics_id : 
+google_analytics_id :
 
 
 #sass:
@@ -39,5 +39,5 @@ compress_html:
   clippings: all
   comments: ['<!-- ', ' -->']
   endings: all
-  profile: fale
+  profile: true
   # startings: [html, head, body]

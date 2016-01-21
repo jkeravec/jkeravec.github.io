@@ -12,6 +12,9 @@ description: "Webmaster, intégrateur HTML, développeur front end, réalisation
 google_analytics_id : UA-72727120-1
 
 
+gems:
+  - jekyll-sitemap
+
 #sass:
   # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
   #style: :expanded
@@ -39,5 +42,5 @@ compress_html:
   clippings: all
   comments: ['<!-- ', ' -->']
   endings: all
-  profile: fale
+  profile: false
   # startings: [html, head, body]
