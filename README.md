@@ -21,6 +21,10 @@ Commades :
 
 
 --------
+
+
+
+--------
 Tilde ~ : Alt⌥ + n
 Pipe | : Alt⌥ + Maj⇧ + l
 Backslash \ : Alt⌥ + Maj⇧ + /

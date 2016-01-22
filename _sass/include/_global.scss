@@ -721,13 +721,13 @@ img::-moz-selection {
     font-size: 1.5em;
 }
 
+.download:hover {
+  color: white;
+  text-decoration: none;
+}
+
 .no-touchevents {
   @media(min-width:768px) {
-    .download:hover {
-      color: white;
-      text-decoration: none;
-    }
-
     .download:hover .fa {
         display: inline-block;
         animation-duration: 0.5s;

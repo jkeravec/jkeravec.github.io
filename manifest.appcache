@@ -2,16 +2,25 @@
 layout: null
 ---
 CACHE MANIFEST
-# rev {{ site.buildtime }}
+# revision : {{ site.time | date: '%y%m%d%k%M%S' }}
 
 CACHE:
 /css/main.min.css
 /fonts/fontawesome-webfont.woff?v=4.5.0
 /js/main.min.js
-
-{% for item in site.images %}{{ item.url }}
+/img/portfolio/axa-observatoire-thumbnail.png
+/img/portfolio/becherel-thumbnail.png
+/img/portfolio/civipol-thumbnail.png
+/img/portfolio/domitys-thumbnail.png
+/img/portfolio/expertconnect-thumbnail.png
+/img/portfolio/sg-comparateur-thumbnail.png
+/img/portfolio/sg-ensembleenregion-thumbnail.png
+/img/portfolio/speedy-vide-garage-thumbnail.png
+/img/portfolio/speedyrecrute-thumbnail.png
+/img/portfolio/ufc-cmoinscher-thumbnail.png
+/img/portfolio/verallia-thumbnail.png
 
 NETWORK:
 *
-http://*
-https://*
+#http://*
+#https://*

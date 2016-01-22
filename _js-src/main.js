@@ -1,6 +1,10 @@
 
 $(function() {
 
+  // Add class js
+  $('body').toggleClass( 'js', 'no-js' );
+  //document.documentElement.className = document.documentElement.className.replace("no-js","js");
+
   // Animate page scroll (require easing.js)
   $('a.page-scroll').bind('click', function(event) {
       var $anchor = $(this);

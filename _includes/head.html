@@ -52,13 +52,15 @@
     <!-- Custom Fonts -->
     <!-- <link href="//fonts.googleapis.com/css?family=Montserrat:400,700|Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css"> -->
     {% include fonts.js %}
-    
+
     <!-- Styles -->
     {% if page.url == '/' and site.env == 'prod' %}
     <style>
       {% include critical.css %}
     </style>
     {% endif %}
+
+
 
     <script>{% include first.min.js %}</script>
     <script>
