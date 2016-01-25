@@ -858,3 +858,9 @@ article .lazyloaded {
     margin-bottom: 6px;
   }
 }
+
+@media(max-height:480px) {
+  header .next {
+    display: none;
+  }
+}

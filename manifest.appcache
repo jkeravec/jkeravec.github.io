@@ -2,12 +2,12 @@
 layout: null
 ---
 CACHE MANIFEST
-# revision : {{ site.time | date: '%y%m%d%k%M%S' }}
+# revision : {{ site.time | date: '%y%m%d%M%S' }}
 
 CACHE:
-/css/main.min.css
+/css/main.min.css?v={{ site.time | date: '%y%m%d%M%S' }}
 /fonts/fontawesome-webfont.woff?v=4.5.0
-/js/main.min.js
+/js/main.min.js?v={{ site.time | date: '%y%m%d%M%S' }}
 /img/portfolio/axa-observatoire-thumbnail.png
 /img/portfolio/becherel-thumbnail.png
 /img/portfolio/civipol-thumbnail.png

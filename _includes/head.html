@@ -65,7 +65,7 @@
     <script>{% include first.min.js %}</script>
     <script>
       {% if site.env == 'prod' %}
-      loadCSS("/css/main.min.css?v={{ site.time | date: '%y%m%d%k%M%S' }}");
+      loadCSS("/css/main.min.css?v={{ site.time | date: '%y%m%d%M%S' }}");
       {% else %}
       loadCSS('/{{ "css/vendor-dev.css" | prepend: site.baseurl }}');
       loadCSS('/{{ "css/main-dev.css" | prepend: site.baseurl }}');
@@ -73,7 +73,7 @@
     </script>
     <noscript>
       {% if site.env == 'prod' %}
-      <link rel="stylesheet" href="/css/main.min.css?v={{ site.time | date: '%y%m%d%k%M%S' }}">
+      <link rel="stylesheet" href="/css/main.min.css?v={{ site.time | date: '%y%m%d%M%S' }}">
       {% else %}
       <link rel="stylesheet" href="/{{ "css/vendor-dev.css" | prepend: site.baseurl }}">
       <link rel="stylesheet" href="/{{ "css/main-dev.css" | prepend: site.baseurl }}">

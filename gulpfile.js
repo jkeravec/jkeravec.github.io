@@ -78,10 +78,10 @@ gulp.task('sass', function() {
         includePaths: ['_sass'],
         onError: browserSync.notify
     }))
-    .pipe(cleanCss())
-    .pipe(optCss())
-    //.pipe(purify(['*.html','_includes/*.html','_layouts/*.html','js/main.min.js']))
-    //.pipe(postcss(processors))
+    //.pipe(cleanCss())
+    //.pipe(optCss())
+    .pipe(purify(['*.html','_includes/*.html','_layouts/*.html','js/main.min.js']))
+    .pipe(postcss(processors))
     .pipe(rename({ suffix: '.min' }))
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('_site/css'))
