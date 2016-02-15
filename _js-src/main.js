@@ -31,7 +31,6 @@ $(function() {
       data: $(this).serialize(),
       dataType: "json",
       success: function(data) {
-        alert("success");
         $('#success').html("<div class='alert alert-success'>");
         $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
             .append("</button>");
@@ -42,7 +41,6 @@ $(function() {
         $contactForm.trigger("reset");
       },
       error: function(err) {
-        alert("error");
         $('#success').html("<div class='alert alert-danger'>");
         $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
             .append("</button>");
